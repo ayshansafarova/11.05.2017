@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+	var a=0;
+	function create(){
+		a++;
+		if(a%2!=0){
+		var p=document.createElement("p");
+		document.body.appendChild(p);
+		p.innerHTML="Bura Code Academydir :) "
+	}else{
+		var i=document.createElement("img");
+		document.body.appendChild(i);
+		i.setAttribute("src","https://code.edu.az/img/code-socialshare.png");
+		i.setAttribute("width","300");
+		i.setAttribute("height","400");
+	}
+
+
+	}
+
+	var button=document.createElement("button");
+	document.body.appendChild(button);
+	button.innerHTML="Welcome";
+	button.addEventListener("click",create)
+
+	</script>
+
+</body>
+</html>

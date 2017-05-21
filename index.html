@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+	var a=0;
+	function create(){
+		a++;
+		if(a%2!=0){
+		var p=document.createElement("p");
+		document.body.appendChild(p);
+		p.innerHTML="Read..."
+	}else{
+		var h=document.createElement("hr");
+		document.body.appendChild(h);
+		
+
+	}
+
+
+	}
+
+	var button=document.createElement("button");
+	document.body.appendChild(button);
+	button.innerHTML="Click it";
+	button.addEventListener("click",create)
+
+	</script>
+
+</body>
+</html>
